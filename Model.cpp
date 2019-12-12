@@ -341,6 +341,7 @@ void Model::NewCommand(char type, int ID1, int x, int y)
 			}
 			string in_name;
 			cout << "Enter the name for your new Pokemon" << endl;
+			cin >> in_name;
 			Pokemon* new_Pokemon = new Pokemon(in_name, 2, 20, 5, 4, 15, ID1, Point2D(x,y)); 
 			Pokemon_ptrs.push_back(new_Pokemon);
 			Object_ptrs.push_back(new_Pokemon);
@@ -361,6 +362,7 @@ void Model::NewCommand(char type, int ID1, int x, int y)
 			}
 			string in_name;
 			cout << "Enter the name for your new Rival" << endl;
+			cin >> in_name;
 			arena_it = BattleArena_ptrs.begin();
 			Rival* new_Rival = new Rival(in_name, 2, 20, 5, 4, 15, ID1, (*arena_it)->GetLocation()); 
 			Rival_ptrs.push_back(new_Rival);
