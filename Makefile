@@ -7,7 +7,7 @@ GCC = g++ -std=c++11
 
 #TestCheckpoint1.cpp
 
-pa: main.cpp Point2D.o Vector2D.o GameObject.o Building.o PokemonCenter.o PokemonGym.o Pokemon.o Model.o GameCommand.o View.o Rival.o BattleArena.o 
+pa: main.cpp Point2D.o Vector2D.o GameObject.o Building.o PokemonCenter.o PokemonGym.o Pokemon.o Model.o GameCommand.o View.o Rival.o BattleArena.o
 	$(GCC) main.cpp Point2D.o Vector2D.o GameObject.o Building.o PokemonCenter.o PokemonGym.o Pokemon.o Model.o GameCommand.o View.o Rival.o BattleArena.o -o pa
 
 # TestCheckpoint1.o: TestCheckpoint1.cpp
@@ -56,6 +56,6 @@ Input_Handling.o: Input_Handling.h
 	$(GCC) -c Input_Handling.h
 
 clean: 
-	rm main.o Point2D.o Vector2D.o GameObject.o Building.o PokemonCenter.o PokemonGym.o Pokemon.o View.o Rival.o BattleArena.o Input_Handling.o pa3
+	rm main.o Point2D.o Vector2D.o GameObject.o Building.o PokemonCenter.o PokemonGym.o Pokemon.o Model.o GameCommand.o View.o Rival.o BattleArena.o pa
 
 
