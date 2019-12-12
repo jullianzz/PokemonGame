@@ -56,6 +56,6 @@ Input_Handling.o: Input_Handling.h
 	$(GCC) -c Input_Handling.h
 
 clean: 
-	rm main.o Point2D.o Vector2D.o GameObject.o Building.o PokemonCenter.o PokemonGym.o Pokemon.o Model.o GameCommand.o View.o Rival.o BattleArena.o pa a.out
+	rm main.o Point2D.o Vector2D.o GameObject.o Building.o PokemonCenter.o PokemonGym.o Pokemon.o Model.o GameCommand.o View.o Rival.o BattleArena.o pa 
 
 
