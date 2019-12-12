@@ -85,11 +85,12 @@ void DoRunCommand(Model &model, View &view)
 	for (int i = 1; i <= 5; i++)
 	{
 		cout << "Advancing next event " << i << endl;
-		if (i < 5)
-			perform = false;
 
 		if (model.Update())
+		{
+			perform = true; 
 			break;
+		}
 		model.ShowStatus();
 
 	}
